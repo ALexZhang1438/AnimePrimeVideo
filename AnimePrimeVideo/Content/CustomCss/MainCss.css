@@ -1,0 +1,18 @@
+﻿    .menu {
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+    .menu a {
+        color: hotpink !important;
+        font-family: Century Gothic !important;
+        font-weight: bold;
+        font-size: 20px;
+        -webkit-text-stroke: 0.5px pink;
+    }
+
+    .menu li {
+        padding-top: 10px;
+    }
+    .inicio img{
+        width: 350px;
+    }
