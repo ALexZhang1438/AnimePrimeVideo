@@ -31,12 +31,17 @@ namespace AnimePrimeVideo.Controllers
 
         // POST: Voz/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(VozModelo voz)
         {
             try
             {
                 // TODO: Add insert logic here
 
+               using (var db = new Context())
+                {
+                    db.ActorVoz.Add(voz);
+                    db.SaveChanges();
+                }
                 return RedirectToAction("Index");
             }
             catch
