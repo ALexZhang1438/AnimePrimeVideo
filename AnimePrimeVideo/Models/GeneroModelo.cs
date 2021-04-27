@@ -9,5 +9,6 @@ namespace AnimePrimeVideo.Models
     {
         public int ID { get; set; }
         public string Nom_Genero { get; set; }
+        public string Imagen { get; set; }
     }
 }

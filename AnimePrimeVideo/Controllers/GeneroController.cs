@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AnimePrimeVideo.Models;
 
 namespace AnimePrimeVideo.Controllers
 {
     public class GeneroController : Controller
     {
+        Context DB = new Context();
         // GET: Genero
         public ActionResult Index()
         {
-            return View();
+            var genero = DB.Genero.ToList();
+            return View(genero);
         }
 
         // GET: Genero/Details/5

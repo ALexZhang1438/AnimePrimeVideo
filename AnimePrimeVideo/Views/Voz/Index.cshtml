@@ -3,37 +3,34 @@
 @{
     ViewBag.Title = "Index";
 }
+<div class="container-fluid">
+    <div class="row">
+        <div class="offset-3 col-6">
+            <h2>Actores de doblaje</h2>
+        </div>
+    </div>
+    <div class="row fotos">
+        <div class="col-2">
+            <img src="~/Content/WebImages/voicepage.png" />
+        </div>
+        <div class="col-10">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="offset-1 col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../Content/VoiceActor/@item.Foto" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">@item.ActorDeVoz</h5>
+                                <a href="#" class="btn btn-primary">Más detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div>
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.ActorDeVoz)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Foto)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ActorDeVoz)
-        </td>
-        <td>
-            <img src = @item.Foto />
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
-
-</table>
+        </div>
+   </div>
+</div>

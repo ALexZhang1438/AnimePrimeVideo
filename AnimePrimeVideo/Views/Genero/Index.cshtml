@@ -1,0 +1,36 @@
+﻿@model IEnumerable<AnimePrimeVideo.Models.GeneroModelo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Genero</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <img src="~/Content/WebImages/Genero.png" width="350"/>
+        </div>
+        <div class="col-10">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="offset-1 col-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="~/Content/WebImages/@item.Imagen" class="card-img-top">
+                            <div class="card-img-overlay">
+                                <button type="button" class="btn btn-light"><h5>@item.Nom_Genero</h5></button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
