@@ -31,13 +31,16 @@ namespace AnimePrimeVideo.Controllers
 
         // POST: Genero/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(GeneroModelo genero)
         {
             try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+            {  
+                using (var db = new Context())
+                {
+                    db.Genero.Add(genero);
+                    db.SaveChanges();
+                }
+                return RedirectToAction("create");
             }
             catch
             {

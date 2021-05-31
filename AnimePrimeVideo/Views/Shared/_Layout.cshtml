@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    <title>@ViewBag.Title - Mi AnimePrimeVideo ASP.NET</title>
     <link href="~/Content/CustomCss/MainCss.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
@@ -13,21 +13,21 @@
         <div class="container-fluid">
             <div class="row menu" style="padding-top: 10px">
                 <div class="col-3 offset-1">
-                    <img src="~/Content/WebImages/logo.png" width="60" />
+                    <a>
+                        <img src="~/Content/WebImages/logo.png" width="60" />
+                    </a>
+                    <a href="../Home/Index">AnimePrimeVideo</a>
                 </div>
                 <div class="col-7">
                     <ul class="nav justify-content-end">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">AnimePrimeVideo</a>
+                            <a class="nav-link" href="../Genero/Index">Directorio Anime</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Directorio</a>
+                            <a class="nav-link" href="../Voz/Index">Senryu</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#">Openings y Endings</a>
                         </li>
                     </ul>
                 </div>
@@ -39,7 +39,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - AnimePrimeVideo</p>
         </footer>
     </div>
 

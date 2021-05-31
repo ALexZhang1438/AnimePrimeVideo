@@ -12,5 +12,6 @@ namespace AnimePrimeVideo.Models
         public DbSet<GeneroModelo> Genero { get; set; }
         public DbSet<AnimeModelo> Animes { get; set; }
         public DbSet<AnimeVocesModelo> AnimeVoces { get; set; }
+        public DbSet<AnimeEpisodiosModelo> AnimeEpisodios{ get; set; }
     }
 }
