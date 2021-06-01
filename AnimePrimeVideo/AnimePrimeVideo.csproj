@@ -152,8 +152,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\CustomCss\MainCss.css" />
     <Content Include="Content\CustomCss\VoiceCss.css" />
-    <Content Include="Content\ImgAnime\ReZero.jpg" />
+    <Content Include="Content\Ending\Ending-Test.mp3" />
     <Content Include="Content\ImgAnime\YourName.png" />
+    <Content Include="Content\Opening\Sousei_no_Onmyouji_OP.mp3" />
     <Content Include="Content\WebImages\Fantasia.jpg" />
     <Content Include="Content\VoiceActor\Inori_Minase.png" />
     <Content Include="Content\VoiceActor\Shizuka_Ito.png" />
